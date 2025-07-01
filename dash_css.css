@@ -1,0 +1,72 @@
+/* Basic RSS feed display styles */
+body {
+  background: #fff;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Feed container */
+.feed-container {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+/* Feed headings */
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin: 0 0 20px;
+}
+
+h2 {
+  color: #444;
+  font-size: 20px;
+  margin: 0 0 15px;
+}
+
+h3 {
+  color: #555; 
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+/* Feed content */
+p {
+  color: #666;
+  margin: 0 0 15px;
+}
+
+/* Feed items */
+.feed-item {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.feed-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Links */
+a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 10px 0;
+}
