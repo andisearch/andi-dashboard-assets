@@ -1,71 +1,56 @@
-/* Base styles for RSS feed */
-.rss-feed {
-  padding: 20px;
+/* Main container styling */
+.css-kuoxoh-panel-content {
+  padding: 16px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
-/* Feed item container */
-.feed-item {
-  margin-bottom: 24px;
-  padding: 16px;
-  border-radius: 4px;
-  transition: background 0.2s;
-}
-
-/* Light/dark mode backgrounds */
-.feed-item {
-  background: rgba(255, 255, 255, 0.05); /* Dark mode default */
-}
-
-body.theme-light .feed-item {
-  background: rgba(0, 0, 0, 0.03); /* Light mode */
-}
-
 /* Headings */
-.feed-item h1 {
+.css-kuoxoh-panel-content h1 {
   font-size: 1.5rem;
-  margin: 0 0 8px 0;
   font-weight: 500;
+  margin: 0 0 1rem;
+  color: var(--text-primary-color);
 }
 
-.feed-item h2 {
-  font-size: 1.2rem;
-  margin: 16px 0 8px 0;
+.css-kuoxoh-panel-content h2 {
+  font-size: 1.25rem;
   font-weight: 500;
+  margin: 1rem 0;
+  color: var(--text-primary-color);
 }
 
 /* Links */
-.feed-item a {
-  color: #6E9FFF; /* Accessible blue that works in both modes */
+.css-kuoxoh-panel-content a {
+  color: var(--link-color);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-.feed-item a:hover {
+.css-kuoxoh-panel-content a:hover {
+  color: var(--link-hover-color);
   text-decoration: underline;
 }
 
 /* Images */
-.feed-item img {
+.css-kuoxoh-panel-content img {
   max-width: 100%;
   height: auto;
   border-radius: 4px;
-  margin: 12px 0;
+  margin: 0.5rem 0;
 }
 
-/* Feed metadata */
-.feed-meta {
-  font-size: 0.9rem;
-  color: #999;
-  margin-top: 8px;
+/* Feed item container */
+.css-kuoxoh-panel-content .feed-item {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  background: var(--background-secondary);
+  border: 1px solid var(--border-weak);
 }
 
-/* Responsive layout */
-@media (max-width: 768px) {
-  .rss-feed {
-    padding: 12px;
-  }
-  
-  .feed-item {
-    padding: 12px;
-  }
+/* Feed item metadata */
+.css-kuoxoh-panel-content .feed-meta {
+  font-size: 0.875rem;
+  color: var(--text-secondary-color);
+  margin-bottom: 0.5rem;
 }
